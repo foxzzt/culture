@@ -231,7 +231,47 @@ Key result:
 - The fitted line and labels for Shanghai, Guangdong, Jiangsu, and Jilin were retained.
 - The public repository includes the resulting `figures/fig_5_ipr_vs_gdp_per_capita.png`.
 
-## 6. What Claude Should Verify
+## 6. Referee Round 2 Fixes Completed by Codex
+
+Codex also completed the referee round-2 fixes from `2026-07-06_tickets_referee_round2.md`. The detailed Claude-facing summary is:
+
+- `docs/referee_round2_results_for_claude.md`
+
+Round-2 highlights:
+
+- Ticket 12 fixes Table A10 by replacing unstable share-of-gap decomposition values with absolute additive Kitagawa contributions.
+- Ticket 12 adds Table A11 for lagged-denominator IPR and 2015-2024 batch match shares.
+- Ticket 13 adds exact-only vs full-linkage match rates, a 100-link fuzzy precision audit, category-level match rates, and parity-flip recounts under explicit tie rules.
+- Ticket 14 resolves the scenic-area zero issue: Xinjiang is a join error corrected from source counts, while Hainan is a source coverage gap and should be treated as missing rather than true zero.
+
+Round-2 files to inspect:
+
+- `tables/table_A10_composition_adjusted_ipr.tex`
+- `tables/table_A10_composition_adjusted_ipr_absolute.csv`
+- `tables/table_A11_lagged_denominator_ipr.tex`
+- `tables/table_A11_lagged_denominator_ipr.csv`
+- `tables/table_A12_exact_vs_fuzzy_match_rate.tex`
+- `tables/table_A13_category_match_rate.tex`
+- `tables/table_A14_parity_flip_recount.tex`
+- `tables/table_A2_descriptive_statistics.tex`
+- `docs/ticket12_methods_note.md`
+- `docs/ticket12_summary.md`
+- `docs/ticket13_summary.md`
+- `docs/ticket14_scenic_area_zero_check.md`
+
+Round-2 quality gates reported by Codex:
+
+- Table A10 row count: 31.
+- Table A11 row count: 31.
+- A10 additivity max absolute residual: 2.220e-16.
+- Guangdong adjusted IPR: 0.596501, rounding to the required 0.597 anchor.
+- Exact-only match rate never exceeds full-linkage match rate.
+- Fuzzy precision audit sample size: 100; estimated false-positive rate: 0/100.
+- Standard-category project count sum: 20,823.
+- National full-linkage match rate: 0.510658, rounding to the required 0.511 anchor.
+- Corrected Table A2 scenic rows have count 30; the A-level scenic-area minimum is 109 and the 5A minimum is 2.
+
+## 7. What Claude Should Verify
 
 Please verify the following:
 
@@ -242,8 +282,9 @@ Please verify the following:
 5. Figures render correctly in GitHub.
 6. The public reproduction script runs and writes non-map figure outputs.
 7. The paper-result caveats above are reflected in any manuscript edits, especially the Ticket 03 match-quality warning.
+8. Round-2 files listed above exist in `tables/` and `docs/`, and the Ticket 12-14 quality gates are reflected in any manuscript revision.
 
-## 7. Recommended Claude Response to User
+## 8. Recommended Claude Response to User
 
 If this repository passes review, tell the user that:
 
@@ -252,4 +293,3 @@ If this repository passes review, tell the user that:
 - For long-term Claude/Codex collaboration on raw data, the user should create a separate private repository.
 
 If changes are needed, propose specific edits to `README.md`, `docs/data_note.md`, this `CLAUDE.md`, or the public file structure.
-

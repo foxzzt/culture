@@ -1,0 +1,22 @@
+\begin{table}[!htbp]
+\centering
+\caption{Parity-Flip Recount Under Alternative Tie Rules}
+\label{tab:parity_flip_recount}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrrr}
+\toprule
+design & window & tie\_rule & flip\_count & liaoning\_baseline\_IPR & liaoning\_comparison\_value & liaoning\_baseline\_below & liaoning\_comparison\_below & liaoning\_flip \\
+\midrule
+symmetric\_literal & 2010\_2024 & strict\_below & 9 & 0.748 & 1.000 & True & False & True \\
+symmetric\_literal & 2015\_2024 & strict\_below & 9 & 0.748 & 0.000 & True & True & False \\
+asymmetric\_national\_relative & 2010\_2024 & strict\_below & 10 & 0.748 & 0.631 & True & True & False \\
+asymmetric\_national\_relative & 2015\_2024 & strict\_below & 12 & 0.748 & 0.000 & True & True & False \\
+symmetric\_literal & 2010\_2024 & tie\_as\_below & 8 & 0.748 & 1.000 & True & True & False \\
+symmetric\_literal & 2015\_2024 & tie\_as\_below & 10 & 0.748 & 0.000 & True & True & False \\
+asymmetric\_national\_relative & 2010\_2024 & tie\_as\_below & 10 & 0.748 & 0.631 & True & True & False \\
+asymmetric\_national\_relative & 2015\_2024 & tie\_as\_below & 12 & 0.748 & 0.000 & True & True & False \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

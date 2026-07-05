@@ -1,0 +1,6 @@
+﻿dataset,unit_of_observation,years,key_variables,source,role_in_paper
+Province ICH cumulative summary,province,through 2024,project_count; inheritor_count; IPR,截止2024年各省省级非物质文化遗产代表性项目与代表性传承人数量.xlsx; cleaned in data_processed/ich_province_cumulative.csv,Core cross-sectional IPR measure
+Province-year ICH panel,province-year,2005-2024,project_count; inheritor_count; IPR by year,Detailed project and inheritor workbooks; cleaned in data_processed/ich_province_year_panel.csv,Time trend and IPR inequality over time
+China city statistical database,prefecture-city aggregated to province,2023,GDP per capita; fiscal expenditure per capita; population; urbanization; museums; library and cultural-employment fields inspected but incomplete,中国城市数据库v202603版（2000-2024年）.xlsx,Economic and administrative/cultural capacity covariates
+A-level scenic areas,province,2025 source snapshot,A-level scenic area count; 5A scenic area count,全国A级景区数据2025 and 分省分等级统计.xlsx,Tourism endowment/context controls and appendix map
+Historical-cultural cities/towns/villages,province,source snapshot,"historical-cultural city, town, village counts",中国历史文化名城/名镇/名村 source files,Historical-cultural endowment variable

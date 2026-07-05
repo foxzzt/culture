@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\caption{Data Sources and Variable Construction}
+\label{tab:data_sources}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccc}
+\hline\hline
+dataset & unit\_of\_observation & years & key\_variables & source & role\_in\_paper \\
+\hline
+Province ICH cumulative summary & province & through 2024 & project\_count; inheritor\_count; IPR & 截止2024年各省省级非物质文化遗产代表性项目与代表性传承人数量.xlsx; cleaned in data\_processed/ich\_province\_cumulative.csv & Core cross-sectional IPR measure \\
+Province-year ICH panel & province-year & 2005-2024 & project\_count; inheritor\_count; IPR by year & Detailed project and inheritor workbooks; cleaned in data\_processed/ich\_province\_year\_panel.csv & Time trend and IPR inequality over time \\
+China city statistical database & prefecture-city aggregated to province & 2023 & GDP per capita; fiscal expenditure per capita; population; urbanization; museums; library and cultural-employment fields inspected but incomplete & 中国城市数据库v202603版（2000-2024年）.xlsx & Economic and administrative/cultural capacity covariates \\
+A-level scenic areas & province & 2025 source snapshot & A-level scenic area count; 5A scenic area count & 全国A级景区数据2025 and 分省分等级统计.xlsx & Tourism endowment/context controls and appendix map \\
+Historical-cultural cities/towns/villages & province & source snapshot & historical-cultural city, town, village counts & 中国历史文化名城/名镇/名村 source files & Historical-cultural endowment variable \\
+\hline\hline
+\end{tabular}
+}
+\end{table}

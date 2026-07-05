@@ -1,0 +1,53 @@
+﻿Specification,Variable_or_stat,Estimate
+IPR (1),Constant,2.483***
+IPR (1),,(0.667)
+IPR (1),log(1 + ICH projects),-0.214**
+IPR (1),,(0.100)
+IPR (1),N,31
+IPR (1),R-squared,0.110
+IPR (1),Adj. R-squared,0.080
+IPR (2),Constant,2.067
+IPR (2),,(2.576)
+IPR (2),log(1 + ICH projects),-0.436***
+IPR (2),,(0.077)
+IPR (2),log(GDP per capita),-0.236
+IPR (2),,(0.178)
+IPR (2),log(Fiscal expenditure per capita),0.382**
+IPR (2),,(0.175)
+IPR (2),log(1 + historical-cultural endowment),0.271***
+IPR (2),,(0.067)
+IPR (2),N,31
+IPR (2),R-squared,0.409
+IPR (2),Adj. R-squared,0.318
+IPR + region FE,Constant,2.255
+IPR + region FE,,(2.769)
+IPR + region FE,log(1 + ICH projects),-0.443***
+IPR + region FE,,(0.093)
+IPR + region FE,log(GDP per capita),-0.159
+IPR + region FE,,(0.186)
+IPR + region FE,log(Fiscal expenditure per capita),0.302
+IPR + region FE,,(0.184)
+IPR + region FE,log(1 + historical-cultural endowment),0.220***
+IPR + region FE,,(0.083)
+IPR + region FE,region_East,-0.144
+IPR + region FE,,(0.147)
+IPR + region FE,region_Northeast,-0.340
+IPR + region FE,,(0.254)
+IPR + region FE,region_West,-0.019
+IPR + region FE,,(0.155)
+IPR + region FE,N,31
+IPR + region FE,R-squared,0.481
+IPR + region FE,Adj. R-squared,0.324
+Raw count,Constant,123.349
+Raw count,,(137.886)
+Raw count,project_count,0.628***
+Raw count,,(0.132)
+Raw count,GDP_per_capita,-0.001
+Raw count,,(0.001)
+Raw count,fiscal_expenditure_per_capita,0.007**
+Raw count,,(0.003)
+Raw count,historical_cultural_city_town_village_count,5.460***
+Raw count,,(1.091)
+Raw count,N,31
+Raw count,R-squared,0.738
+Raw count,Adj. R-squared,0.698

@@ -2,7 +2,7 @@
 
 Date: 2026-07-06
 Origin: Strategy agent, follow-up to Tony's M13 Part B policy check
-status: open
+status: done
 
 ## Ticket 16: national_inheritor_roster_overlap
 

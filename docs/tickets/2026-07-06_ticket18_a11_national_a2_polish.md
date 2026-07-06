@@ -2,7 +2,7 @@
 
 Date: 2026-07-06
 Origin: Strategy agent, v3 draft defect list from the writing agent
-status: open
+status: done
 
 ## Ticket 18: a11_national_row_and_a2_polish
 

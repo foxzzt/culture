@@ -1,11 +1,11 @@
 # Writing Agent Instructions: Manuscript v3 Integration
 
-Date: 2026-07-06
+Date: 2026-07-06 (v3.1, updated same day with Ticket 15 results)
 From: Strategy/Referee agent, via Tony
 Manuscript base: cultural_policy_revised_v2 (the version with all nine TODO[DATA] closed, 43 pages)
 Repo inputs: fetch raw files from https://raw.githubusercontent.com/foxzzt/culture/main/
 
-Scope: integrate the round-2 acceptance results and the M13 Part B policy findings. Three items are marked HOLD; they wait on Codex Tickets 15, 16, 17 and will arrive as short summaries in docs/. Everything else can be executed now. Do not change the paper's descriptive framing, section order, or headline structure. Word budget is already near the 11,000 ceiling, so offset additions with trims in the sections named below.
+Scope: integrate the round-2 acceptance results and the M13 Part B policy findings. Two items remain HOLD (items 6 and 16); they wait on Codex Tickets 17 and 16 and will arrive as short summaries in docs/. Everything else can be executed now. Do not change the paper's descriptive framing, section order, or headline structure. Word budget is already near the 11,000 ceiling, so offset additions with trims in the sections named below.
 
 ## A. Appendix table integration
 
@@ -46,6 +46,6 @@ Scope: integrate the round-2 acceptance results and the M13 Part B policy findin
 
 ## G. Holds and sequencing
 
-17. HOLD: do not touch Table A3 or Figure 3 until Ticket 15 delivers corrected scenic-area Ginis (N=30) and the regenerated or trimmed Lorenz figure. Then update the two scenic Gini values, the figure note, and add half a sentence in the text where scenic-area inequality is mentioned, noting Hainan is missing from the scenic registry snapshot.
+17. Ticket 15 numbers are confirmed and can be written now. In every place the text cites scenic-area Ginis, use the corrected values: 5A scenic areas 0.2643 (was 0.3161) and all A-level scenic areas 0.2806 (was 0.3332), both computed on N=30 provinces because Hainan is absent from the scenic registry snapshot; Xinjiang's counts were corrected from a join error. Non-scenic Ginis are unchanged (projects 0.2374, inheritors 0.2430, IPR 0.1722). Add half a sentence where scenic-area inequality is discussed noting the N=30 basis. The physical files (updated table_A3 TEX, cleaned table_A2 TEX, regenerated fig_3 PDF) are finished on Codex's machine but not yet pushed to GitHub due to a temporary client block. Before final compile, pull the latest tables/ and figures/ from the repo and swap them in. If they have not arrived by your final compile, edit the two Gini values and the N column of table_A3 directly in your local copy, delete the library_count and cultural_capacity_proxy rows from table_A2, and flag in your delivery note that fig_3 still needs the regenerated PDF.
 18. Word budget: offset additions by trimming the abstract (currently about 260 words; target under 200) and compressing the Section 5.1 opening paragraph, which should also be split into at least three paragraphs.
 19. After integration, recompile and confirm zero errors, zero undefined references, and report the new word count. Deliver main.tex plus the full source zip as usual.

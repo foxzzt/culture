@@ -2,7 +2,7 @@
 
 Date: 2026-07-06
 Origin: Strategy agent, independent re-review of the 100-link precision audit
-status: open
+status: done
 
 ## Ticket 17: resolve_flagged_fuzzy_links
 

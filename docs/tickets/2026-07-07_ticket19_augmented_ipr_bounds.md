@@ -2,7 +2,7 @@
 
 Date: 2026-07-07
 Origin: Strategy agent, acceptance of Ticket 16
-status: open
+status: done
 
 ## Ticket 19: augmented_ipr_bounds
 
